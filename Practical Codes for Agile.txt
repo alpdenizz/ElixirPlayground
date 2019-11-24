@@ -1,0 +1,29 @@
+
+mix phoenix.new project_name -> Create new phoenix project
+
+config/dev.exs -> Configure the database here
+
+mix ecto.create -> Create the database after configuration
+
+mix ecto.migrate -> Create table in database
+
+mix phx.routes -> API calls of the application
+
+mix phoenix.gen.model class_name schema_name attribute_1 attribute_2 … -> Create new schema with schema_name for database
+
+mix ecto.setup -> Setup the database
+
+mix deps.get -> Get all dependencies provided
+
+mix white_bread.run -> Run white_bread file
+
+npm install -> install javascript dependencies
+
+npm install (-)(-) save vue -> add VueJS to project Orada - - çizgi var bitişik yazılacak
+
+npm install (-)(-) save axios -> add Axios for backend frontend communication
+
+mix phx.gen.secret -> generate secret key for Guardian
+
+mix phoenix.gen.channel channel_name -> create channel with name channel_name
+

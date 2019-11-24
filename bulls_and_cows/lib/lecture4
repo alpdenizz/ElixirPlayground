@@ -1,0 +1,20 @@
+Compiling 1 file (.ex)
+Interactive Elixir (1.5.1) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)> {:ok, pid} = GenServer.start_link(Stack2, [])
+{:ok, #PID<0.123.0>}
+iex(2)> Stack2.push(pid,10)
+:ok
+iex(3)> Stack2.push(pid,15)
+:ok
+iex(4)> Stack2.push(pid,20)
+:ok
+iex(5)> Stack2.pop(pid)
+20
+iex(6)> Stack2.pop(pid)
+15
+iex(7)> recompile
+Compiling 1 file (.ex)
+:ok
+iex(8)> {:ok, pid} = Stack2.start_link()
+{:ok, #PID<0.143.0>}
+iex(9)>
